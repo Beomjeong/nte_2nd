@@ -75,8 +75,8 @@ a {
   font styles
 ════════════════════════════════════════════ */
 
-.event-tip-body p, 
-.event-tip-body .desc, 
+.event-tip-body p,
+.event-tip-body .desc,
 .event-tip-body li {
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -94,9 +94,11 @@ a {
 
 .title li {
   position: relative;
-  margin-bottom: 2px;/* 각 항목 사이 간격 */
+  margin-bottom: 2px;
+  /* 각 항목 사이 간격 */
   text-align: left;
-  margin-left: 30px; /*들여쓰기*/
+  margin-left: 30px;
+  /*들여쓰기*/
 }
 
 
@@ -153,7 +155,8 @@ a {
 
 .notice li {
   position: relative;
-  margin-bottom: 2px;/* 각 항목 사이 간격 */
+  margin-bottom: 2px;
+  /* 각 항목 사이 간격 */
   text-align: left;
   margin-left: 10px;
 }
@@ -311,12 +314,12 @@ a {
 /* Title + play button composite */
 .hero-title-play-wrap {
   position: relative;
-  width: clamp(380px, 70vw, 1060px);
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    margin-bottom: clamp(12px, 3vh, 40px);
+  width: clamp(380px, 70vw, 900px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-bottom: clamp(12px, 3vh, 20px);
 }
 
 .hero-head-title {
@@ -368,7 +371,7 @@ a {
 /* Trapezoid badge — SVG bg drives height naturally; inner content overlaid */
 .hero-event-badge-wrap {
   position: relative;
-  width: clamp(280px, 37.5vw, 900px);
+  width: clamp(320px, 37.5vw, 900px);
 }
 
 .hero-event-badge-bg {
@@ -409,7 +412,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: clamp(12px, 1.25vw, 32px);
-  width: clamp(320px, 55vw, 1060px);
+  width: clamp(350px, 55vw, 1000px);
   max-height: 130px;
   min-height: clamp(70px, 7.5vw, 190px);
   padding: clamp(18px, 2.5vw, 64px) clamp(30px, 2vw, 72px);
@@ -452,21 +455,21 @@ a {
 
 .hero-period-label-img {
   /* PC 기준 높이 (시안에 맞춰 조절하세요) */
-  height: 24px;
+  height: 27px;
   width: auto;
   display: block;
 }
 
 .hero-period-label-img2 {
   /* PC 기준 높이 (시안에 맞춰 조절하세요) */
-  height: 25px;
+  height: 28px;
   width: auto;
   display: block;
 }
 
 .hero-period-value-img {
   /* 날짜 이미지는 레이블보다 조금 더 크거나 같게 */
-  height: 24px;
+  height: 27px;
   width: auto;
   display: block;
 }
