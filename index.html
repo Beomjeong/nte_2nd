@@ -637,28 +637,6 @@
     })();
   </script>
 
-  <!-- Quick top button for mobile (visible at <=768px) -->
-  <button id="quickTopBtn" class="quick-top" aria-label="상단으로 이동">
-    <img src="assets/img/quick-menu-top.svg" alt="상단으로 이동">
-  </button>
-
-  <script>
-    (function () {
-      var btn = document.getElementById('quickTopBtn');
-      if (!btn) return;
-      btn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, { passive: true });
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 300) { // 300px 이상 스크롤 시 버튼 보이기
-          btn.classList.add('visible');
-        } else {
-          btn.classList.remove('visible');
-        }
-      }, { passive: true });
-    })();
-  </script>
-
   <script>
     (function () {
       var els = document.querySelectorAll('.reveal');
