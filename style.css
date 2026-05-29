@@ -288,7 +288,7 @@ a {
   top: clamp(12px, 1.56vw, 28px);
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(320px, 70vw, 1360px);
+  width: clamp(350px, 70vw, 1360px);
   /* 1360/2560 = 53.1vw */
   display: flex;
   justify-content: space-between;
@@ -1446,11 +1446,11 @@ footer {
 
 @media (max-width: 480px) {
   .logo-nte {
-    height: 22px;
+    height: 32px;
   }
 
   .logo-craftbox {
-    height: 14px;
+    height: 24px;
   }
 
   .tab-btn img {
