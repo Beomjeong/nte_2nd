@@ -32,7 +32,7 @@ function setPcRoomToggleState(isPcRoom) {
   if (!toggleImg) { return; }
   var isOn = Boolean(isPcRoom);
   toggleBtn.dataset.state = isOn ? 'on' : 'off';
-  toggleImg.src = isOn ? (_hfBase + 'img/off=on.png') : (_hfBase + 'img/off=off.png');
+  toggleImg.src = isOn ? (_hfBase + '../assets/img/off=on.png') : (_hfBase + '../assets/img/off=off.png');
   toggleImg.alt = isOn ? 'PC방 모드 ON' : 'PC방 모드 OFF';
 }
 
