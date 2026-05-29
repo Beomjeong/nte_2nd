@@ -212,13 +212,14 @@ a {
   min-height: 100svh;
   background: #08080f;
   overflow: hidden;
+  padding-bottom: clamp(20px, 3vw, 60px); /* ← 추가 */
 }
 
 .hero-kv {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  height: 100svh;
   object-fit: cover;
   object-position: 50% top;
   transform: translateY(-10%);
@@ -478,111 +479,6 @@ a {
   filter: brightness(1.12);
 }
 
-
-/* ════════════════════════════════════════════
-   PC방 STATUS BAR
-════════════════════════════════════════════ */
-.bar-pcroom {
-  background: #161616;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(10px, 1.8vw, 36px);
-  padding: clamp(10px, 1.4vw, 26px) clamp(16px, 3vw, 60px);
-  position: relative;
-  z-index: 5;
-  flex-wrap: wrap;
-}
-
-.bar-pcroom-status {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .bar-pcroom-status {
-    display: none;
-  }
-}
-
-.pcroom-badge[hidden] {
-  display: none;
-}
-
-.pcroom-badge {
-  display: flex;
-  align-items: center;
-  gap: clamp(6px, 0.625vw, 12px);
-  padding: clamp(6px, 0.625vw, 12px) clamp(8px, 0.833vw, 16px);
-  border: 2px solid;
-  border-radius: 100px;
-}
-
-.pcroom-badge--off {
-  border-color: #c0c0c0;
-}
-
-.pcroom-badge--on {
-  border-color: #00ff6a;
-}
-
-.pcroom-dot {
-  width: clamp(14px, 1.5625vw, 30px);
-  height: clamp(14px, 1.5625vw, 30px);
-  flex-shrink: 0;
-}
-
-.pcroom-label {
-  font-size: clamp(12px, 1.25vw, 24px);
-  font-weight: 700;
-  white-space: nowrap;
-  line-height: 1;
-}
-
-.pcroom-badge--off .pcroom-label {
-  color: #c0c0c0;
-}
-
-.pcroom-badge--on .pcroom-label {
-  color: #00ff6a;
-}
-
-
-.bar-pcroom-info {
-  display: flex;
-  align-items: center;
-  gap: clamp(1px, 1.5vw, 5px);
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  line-height: 1.2;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* 공통: 굵은 글씨 (HV급) */
-.txt-orange-bold-line,
-.txt-blue-bold,
-.txt-blue-bold-line {
-  font-weight: 700;
-}
-
-/* 주황색 + 밑줄 */
-.txt-orange-bold-line {
-  color: #ff6600;
-  /* 피카 주황색 (수치는 디자인에 맞게 조절하세요!) */
-  text-decoration: underline;
-}
-
-/* 파란색 */
-.txt-blue-bold {
-  color: #007bff;
-  /* 파란색 */
-}
-
-/* 파란색 + 밑줄 */
-.txt-blue-bold-line {
-  color: #007bff;
-  text-decoration: underline;
-}
 
 /* ════════════════════════════════════════════
    TICKER

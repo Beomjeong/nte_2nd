@@ -150,35 +150,6 @@
   </section>
 
   <!-- ════════════════════════════════════════════
-     PC방 ON/OFF 뱃지 - 스크립트 하단 var PCROOM_IS_ON 부분 자바스크립트 true/false 수정하면 변경돼요.
-════════════════════════════════════════════ -->
-  <div class="bar-pcroom reveal">
-    <div class="bar-pcroom-status">
-      <!-- PC방 OFF -->
-      <div class="pcroom-badge pcroom-badge--off">
-        <img src="assets/img/pc-dot-off.png" alt="" class="pcroom-dot">
-        <span class="pcroom-label">PC방 OFF</span>
-      </div>
-      <!-- PC방 ON -->
-      <div class="pcroom-badge pcroom-badge--on" hidden>
-        <img src="assets/img/pc-dot-on.png" alt="" class="pcroom-dot">
-        <span class="pcroom-label">PC방 ON</span>
-      </div>
-    </div>
-    <div class="bar-pcroom-info">
-      본 이벤트는
-      <span class="txt-orange-bold-line">
-        <a href="https://www.picaplay.com/pcb/v2/findPicaPcbang.do?" target="_blank">피카플레이 가맹 PC방</a>
-      </span> 또는
-      <span class="txt-blue-bold">
-        <a href="https://www.craftbox.co.kr/" target="_blank">개인 PC에서</a>
-      </span>
-      <span class="txt-blue-bold-line">
-        <a href="https://www.craftbox.co.kr/" target="_blank">크래프트박스 설치</a>
-      </span> 후 참여 가능합니다.
-    </div>
-  </div>
-  <!-- ════════════════════════════════════════════
      TICKER - 눈에도 잘 안띄고 기능도 없지만 그래도 은은하게 예쁜 텍스트 롤링 장식 ><
 ════════════════════════════════════════════ -->
   <div class="sec-ticker" aria-hidden="true">
@@ -515,18 +486,6 @@
   <script>
     (function () {
       'use strict';
-
-      /* ── PC방 상태 설정 ──
-         var PCROOM_IS_ON = true  : PC방 ON  (초록)
-         var PCROOM_IS_ON = false : PC방 OFF (회색)  */
-      var PCROOM_IS_ON = true;
-
-      var offBadge = document.querySelector('.pcroom-badge--off');
-      var onBadge = document.querySelector('.pcroom-badge--on');
-      if (offBadge && onBadge) {
-        offBadge.hidden = PCROOM_IS_ON;
-        onBadge.hidden = !PCROOM_IS_ON;
-      }
 
       /* ── Tab switching ── */
       var tabBtns = document.querySelectorAll('.tab-btn');
