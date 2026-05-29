@@ -218,11 +218,10 @@ a {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 108%;
+  height: 100%;
   object-fit: cover;
-  object-position: 65% top;
+  object-position: 50% top;
   transform: translateY(-10%);
-  /* 이미지 전체를 위로 올림=얼굴 안가리게끔 */
 }
 
 .hero-top-shadow {
@@ -308,7 +307,12 @@ a {
 .hero-title-play-wrap {
   position: relative;
   width: clamp(380px, 70vw, 1060px);
-  /* background-color: chartreuse; */
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: auto;
+    margin-bottom: clamp(12px, 3vh, 40px);
 }
 
 .hero-head-title {
