@@ -244,6 +244,11 @@ a {
     object-position: 85% 0%; /* 2560px+ */
   }
 }
+@media (max-width: 768px) {
+  .hero-kv {
+  transform: translateY(-10%);
+  }
+}
 
 .hero-top-shadow {
   position: absolute;
