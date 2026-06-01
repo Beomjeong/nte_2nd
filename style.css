@@ -313,19 +313,24 @@ a {
 
 /* 헤드타이틀 + 이벤트정보 그룹 — logo-nte 왼쪽 기준, KV 세로 가운데 */
 .hero-left-group {
+  --hero-group-nudge: 0px; /* ★ 세로 위치 조절 — 양수(px/%): 아래로, 음수: 위로 */
+
   position: absolute;
   left: calc(50% - clamp(175px, 35vw, 680px));
-  top: 45%;
-  transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(calc(-50% + var(--hero-group-nudge)));
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: clamp(12px, 3vh, 20px);
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .hero-left-group {
-  top: 80%;
+    left: 50%;
+    top: auto;
+    bottom: clamp(50px, 6vh, 90px);
+    transform: translateX(-50%);
   }
 }
 
