@@ -282,7 +282,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   min-height: calc(100svh - var(--header-h));
-  padding: 0 24px clamp(50px, 6vh, 90px);
+  padding: 0 24px 0;
 }
 
 .hero-bottom {
@@ -334,7 +334,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(4px, 0.3vh, 20px);
+  gap: clamp(4px, 0.4vh, 20px);
 }
 
 @media (max-width: 1024px) {
@@ -505,7 +505,7 @@ a {
 }
 
 .hero-cta {
-  width: clamp(240px, 28vw, 560px);
+  width: clamp(240px, 28vw, 400px);
   cursor: pointer;
   transition: transform 0.18s, filter 0.18s;
 }
