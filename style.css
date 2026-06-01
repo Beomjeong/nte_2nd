@@ -314,7 +314,7 @@ a {
 /* Title + play button composite */
 .hero-title-play-wrap {
   position: relative;
-  width: clamp(380px, 70vw, 900px);
+  width: clamp(380px, 70vw, 700px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,7 +335,7 @@ a {
   top: 70%;
   /* 플레이버튼 위아래 위치조정 */
   transform: translate(-50%, -50%);
-  width: clamp(32px, 8.81%, 68px);
+  width: clamp(32px, 8.81%, 48px);
   /* 8.81% = 120px / 1361px design title width */
   aspect-ratio: 120 / 118;
   cursor: pointer;
@@ -454,22 +454,19 @@ a {
 }
 
 .hero-period-label-img {
-  /* PC 기준 높이 (시안에 맞춰 조절하세요) */
-  height: 27px;
+  height: clamp(16px, 2.2vw, 27px);
   width: auto;
   display: block;
 }
 
 .hero-period-label-img2 {
-  /* PC 기준 높이 (시안에 맞춰 조절하세요) */
-  height: 28px;
+  height: clamp(16px, 2.2vw, 27px);
   width: auto;
   display: block;
 }
 
 .hero-period-value-img {
-  /* 날짜 이미지는 레이블보다 조금 더 크거나 같게 */
-  height: 27px;
+  height: clamp(16px, 2.2vw, 27px);
   width: auto;
   display: block;
 }
@@ -1311,25 +1308,10 @@ footer {
     white-space: normal;
   }
 
-  .hero-period-label-img {
-    /* PC 기준 높이 (시안에 맞춰 조절하세요) */
-    height: 16px;
-    width: auto;
-    display: block;
-  }
-
-  .hero-period-label-img2 {
-    /* PC 기준 높이 (시안에 맞춰 조절하세요) */
-    height: 17px;
-    width: auto;
-    display: block;
-  }
-
+  .hero-period-label-img,
+  .hero-period-label-img2,
   .hero-period-value-img {
-    /* 날짜 이미지는 레이블보다 조금 더 크거나 같게 */
     height: 16px;
-    width: auto;
-    display: block;
   }
 
   .steps-grid {
