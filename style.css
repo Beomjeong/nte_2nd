@@ -229,8 +229,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 75% 0%;
-  transform: translateY(-5%);
+  object-position: 70% 0%;
+  transform: translateY(-2%);
 }
 
 .hero-top-shadow {
@@ -311,6 +311,24 @@ a {
   pointer-events: auto;
 }
 
+/* 헤드타이틀 + 이벤트정보 그룹 — logo-nte 왼쪽 기준, KV 세로 가운데 */
+.hero-left-group {
+  position: absolute;
+  left: calc(50% - clamp(175px, 35vw, 680px));
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(12px, 3vh, 20px);
+}
+
+@media (max-width: 1024px){
+  .hero-left-group {
+  top: 80%;
+  }
+}
+
 /* Title + play button composite */
 .hero-title-play-wrap {
   position: relative;
@@ -319,7 +337,6 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 0;
-  margin-bottom: clamp(12px, 3vh, 20px);
 }
 
 .hero-head-title {
@@ -365,13 +382,12 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 0;
-  margin-bottom: clamp(-30px, -5vh, -15px);
 }
 
 /* Trapezoid badge — SVG bg drives height naturally; inner content overlaid */
 .hero-event-badge-wrap {
   position: relative;
-  width: clamp(320px, 37.5vw, 900px);
+  width: clamp(320px, 37.5vw, 700px);
 }
 
 .hero-event-badge-bg {
@@ -412,7 +428,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: clamp(12px, 1.25vw, 32px);
-  width: clamp(350px, 55vw, 1000px);
+  width: clamp(350px, 55vw, 800px);
   max-height: 130px;
   min-height: clamp(70px, 7.5vw, 190px);
   padding: clamp(18px, 2.5vw, 64px) clamp(30px, 2vw, 72px);
@@ -472,10 +488,9 @@ a {
 }
 
 .hero-cta {
-  width: clamp(240px, 28vw, 726px);
+  width: clamp(240px, 28vw, 560px);
   cursor: pointer;
   transition: transform 0.18s, filter 0.18s;
-  margin-top: 20px;
 }
 
 .hero-cta:hover {
