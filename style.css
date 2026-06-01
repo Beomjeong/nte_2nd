@@ -229,8 +229,20 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 70% 0%;
+  object-position: 75% 0%; /* ~1919px */
   transform: translateY(-2%);
+}
+
+@media (min-width: 1920px) {
+  .hero-kv {
+    object-position: 70% 0%; /* 1920px ~ 2559px */
+  }
+}
+
+@media (min-width: 2560px) {
+  .hero-kv {
+    object-position: 85% 0%; /* 2560px+ */
+  }
 }
 
 .hero-top-shadow {
@@ -313,16 +325,16 @@ a {
 
 /* 헤드타이틀 + 이벤트정보 그룹 — logo-nte 왼쪽 기준, KV 세로 가운데 */
 .hero-left-group {
-  --hero-group-nudge: 0px; /* ★ 세로 위치 조절 — 양수(px/%): 아래로, 음수: 위로 */
+  --hero-group-nudge: -50px; /* ★ 세로 위치 조절 — 양수(px/%): 아래로, 음수: 위로 */
 
   position: absolute;
   left: calc(50% - clamp(175px, 35vw, 680px));
-  top: 50%;
+  top: 45%;
   transform: translateY(calc(-50% + var(--hero-group-nudge)));
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(12px, 3vh, 20px);
+  gap: clamp(4px, 0.3vh, 20px);
 }
 
 @media (max-width: 1024px) {
