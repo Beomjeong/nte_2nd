@@ -431,6 +431,7 @@
     word-break: keep-all;
     overflow-wrap: break-word;
     min-width: 0;
+    text-align: center;
   }
 }
 

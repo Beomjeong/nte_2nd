@@ -334,7 +334,7 @@ a {
 
   position: absolute;
   left: calc(50% - clamp(175px, 35vw, 680px));
-  top: 45%;
+  top: 48%;
   transform: translateY(calc(-50% + var(--hero-group-nudge)));
   display: flex;
   flex-direction: column;
@@ -409,7 +409,8 @@ a {
 /* Trapezoid badge — SVG bg drives height naturally; inner content overlaid */
 .hero-event-badge-wrap {
   position: relative;
-  width: clamp(320px, 37.5vw, 700px);
+  /* width: clamp(320px, 37.5vw, 700px); */
+  width: 85%;
 }
 
 .hero-event-badge-bg {
@@ -437,8 +438,8 @@ a {
 }
 
 .hero-event-title {
-  height: clamp(14px, 1.41vw, 36px);
-  /* Figma: 36px tall */
+  /* height: clamp(14px, 1.41vw, 36px); */
+  height: 47%;
   width: auto;
   flex-shrink: 0;
 }
