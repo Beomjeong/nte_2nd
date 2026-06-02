@@ -246,7 +246,7 @@ a {
 }
 @media (max-width: 768px) {
   .hero-kv {
-  transform: translateY(-10%);
+  transform: translateY(-30%);
   }
 }
 
